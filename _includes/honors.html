@@ -1,0 +1,55 @@
+{% assign honors = site.data.data.sidebar.honors %}
+{% if honors %}
+  {% if site.data.data.sidebar.honors %}
+  <div class="honors-container container-block">
+
+    <h2 class="container-block-title">
+      {{ honors.title }}
+    </h2>
+
+    {% for honor in honors.info %}
+    <div class="item">
+      {% if honor.link %}
+        <a href="{{ honor.link }}"><h4 class="honor-title">{{ honor.title }}</h4></a>
+      {% else %}
+        <h4 class="honor-title">{{ honor.title }}</h4>
+      {% endif %}
+      <h5 class="meta">{{ honor.organization }}</h5>
+      <div class="time">{{ honor.time }}</div>
+    </div><!--//item-->
+    {% endfor %}
+
+  </div><!--//honors-container-->
+  {% else %}
+  <section class="section honors-section">
+
+    <h2 class="section-title">
+      <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
+      </span>
+      {{ honors.title }}
+    </h2>
+
+    {% for honor in honors.info %}
+    <div class="item">
+
+      <div class="meta">
+
+        <div class="upper-row">
+          <h3 class="honor-title">{{ honor.title }}</h3>
+          <div class="time">{{ honor.time }}</div>
+        </div><!--//upper-row-->
+
+        {% if honor.link %}
+        <div class="link"><a href="{{ honor.link }}">{{ honor.link }}</a></div>
+        {% endif %}
+        <div class="organization">{{ honor.organization }}</div>
+      </div><!--//meta-->
+
+    </div><!--//item-->
+    {% endfor %}
+
+  </section><!--//section-->
+  {% endif %}
+{% endif %}

@@ -1,0 +1,16 @@
+{% assign strengths = site.data.data.sidebar.strengths %}
+{% if strengths %}
+<div class="strengths-container container-block">
+
+  <h2 class="container-block-title">
+    {{ strengths.title }}
+  </h2>
+
+  <ul class="list-unstyled strengths-list">
+    {% for strength in strengths.info %}
+    <li>{{ strength.item }}</li>
+    {% endfor %}
+  </ul>
+
+</div><!--//strengths-->
+{% endif %}

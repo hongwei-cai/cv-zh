@@ -1,0 +1,257 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+  position: right # position of the sidebar : left or right
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: 蔡宏威
+  tagline: 机器学习工程师
+  avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: 13234005487@163.com
+  phone: +86 13234005487
+  # timezone: Asia/Shanghai # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  # citizenship: 中国
+  website: https://hongweicai.com/ # Include the full website URL, including "http://" or "https://".
+  linkedin: hongwei-cai
+  xing: 
+  github: hongwei-cai
+  telegram: # add your nickname without '@' sign
+  gitlab:
+  bitbucket:
+  bluesky: #'@jekyllrb.bsky.social' # Specify your full Bluesky handle
+  twitter: #'@jekyllrb'
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  codewars:
+  goodreads: # Number-Username, e.g. 123456-alandoe
+  mastodon: # Please include your full Mastodon link here.
+  hackerrank: # Please provide your HackerRank username.
+  # leetcode: PrimusPilus # Please provide your LeetCode username.
+  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+
+  honors:
+    title: 荣誉奖项
+    info:
+      - title: Marcus Bach 博士论文奖学金
+        link: https://clas.uiowa.edu/academics/graduate-education/funding/marcus-bach-graduate-fellowships
+        organization: 爱荷华大学
+        time: 2023
+
+      - title: 研究生院暑期研究奖学金
+        organization: 爱荷华大学
+        time: 2021
+
+      - title: Henry and Parker Pelzer奖学金 (2获年度作曲家)
+        organization: 爱荷华大学
+        time: 2017 & 2019
+
+      - title: 研究生音乐人才奖学金
+        organization: 俄克拉荷马城市大学
+        time: 2013 & 2014
+
+      - title: 双年度钢琴副科比赛一等奖
+        organization: 沈阳音乐学院
+        time: 2010
+      
+      - title: 沈阳音乐学院优秀学生奖学金
+        organization: 沈阳音乐学院
+        time: 2009 - 2011
+
+  strengths:
+    title: 核心优势
+    info:
+      - item: 机器学习与AI算法实现
+      - item: 大模型相关能力
+      - item: 跨学科问题解决能力
+      - item: 业务协作与落地
+
+  languages:
+    title: 语言
+    info:
+    - idiom: 英语
+      level: 专业级熟练
+
+    - idiom: 中文
+      level: 母语级
+
+  interests:
+    title: 兴趣爱好
+    info:
+    - item: 健身
+    - item: 阅读
+    - item: 钢琴演奏
+    - item: 音乐创作
+
+career-profile:
+  title: 职业概况
+  summary: |
+    美国爱荷华大学计算机科学硕士，聚焦大模型技术（LLMs/Transformers）研发与产业落地，兼具算法创新与工程化能力。精通PyTorch等深度学习框架，熟悉大模型全流程开发——从预训练微调（LoRA/PEFT）、RLHF优化到知识增强（RAG/Prompt Engineering），以及分布式训练与推理加速
+
+    在美国Casey's Store Support Center担任软件工程师实习生，主导.NET 8系统升级与企业级数据平台性能优化，落地DevOps与CI/CD流程，提升开发效率与系统稳定性
+
+    拥有多项AI项目经验，包括医学影像分析、自动语音识别、多模态数据处理等AI项目，覆盖数据清洗、模型设计、训练调优到部署上线全链路，具备端到端问题解决能力
+
+    擅长将AI技术与业务场景结合，推动技术落地（如医疗/零售领域），强跨团队协作与产品思维，目标岗位：大模型应用开发/训练/评测，致力于用AI解决真实业务挑战并创造可持续价值
+
+education:
+  title: 教育经历
+  info:
+  - degree: 计算机科学硕士
+    university: 爱荷华大学（美国）
+    time: 2023 - 2025
+    details: |
+      核心课程：机器学习、人工智能、算法设计、数据库系统、操作系统
+      - 获全额奖学金
+      - 研究生助教职位
+      - GPA: 3.74/4.00
+
+  - degree: Ph.D.（作曲博士）
+    university: 爱荷华大学（美国）
+    time: 2016 - 2023
+    details: |
+      - 获文理学院优秀博士论文奖
+
+  - degree: 艺术硕士
+    university: 俄克拉荷马城市大学（美国）
+    time: 2013 - 2015
+
+  - degree: 作曲学士
+    university: 沈阳音乐学院
+    time: 2008 - 2012
+
+experiences:
+  title: 工作经历
+  info:
+    - role: 软件工程师（实习）
+      time: 2024.05 - 2024.08
+      company: Casey's Store Support Center, 美国
+      details: |
+        - 独立完成商务整合平台12个应用程序的.NET 8升级项目
+        - 使用Postman进行REST API端到端测试，通过ServiceNow管理IT工单
+        - 参与网络安全团队的渗透测试和数据防泄漏（DLP）技术实践
+        - 初探数据驱动决策机制与企业级数据战略
+        - 熟练运用Agile开发方法论，积极参与Scrum会议和软件开发生命周期
+
+    - role: 研究生助教
+      time: 2023.01 - 2025.05
+      company: 爱荷华大学计算机科学系
+      details: |
+        - 协助教授人工智能、数据结构、编程语言原理等核心课程
+        - 指导学生掌握Java、C、Python、Haskell等编程语言
+        - 负责作业批改、答疑辅导和实验课教学
+        - 协助优化课程结构，改进教学效率和质量
+
+# certifications:
+#   title: Certifications
+#   list:
+#   - name: Git learning
+#     start: 2019
+#     end:
+#     organization: Microsoft
+#     credentialid: 111-222
+#     credentialurl: www.github.com
+#     credentialname: Github
+#     details: |
+#       Older certification. Lorem ipsum dolor sit amet, consectetur
+#       adipiscing elit.
+#       Nullam eget orci purus. Nullam ultrices neque nibh.
+#       Aenean fermentum, felis vulputate suscipit accumsan,
+#       sem enim bibendum augue, sed convallis arcu lacus at dui.
+#       Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+#       Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+#       Praesent venenatis erat non augue suscipit consectetur.
+
+projects:
+  title: 项目
+  intro: >
+    以下是我曾经独立完成或参与过的研究项目
+  assignments:
+  - title: 主动脉瓣关闭不全快速诊断系统（AI医学影像分析）
+    link: "https://github.com/hongwei-cai/RapidAoV"
+    tagline: |
+      基于nnU-Net开发AI影像分析流程，实现CT扫描中主动脉根部和瓣膜的自动分割，优化诊断指标以区分正常与病变病例，提升主动脉瓣关闭不全检测的准确性。技术栈：OpenCV、Insight Toolkit (ITK)、nnU-Net、JupyterLab、高性能计算（HPC）、DataViewerCartesian
+
+  - title: 自动语音识别（ASR）系统
+    link: "https://github.com/hongwei-cai/ASR-System"
+    tagline: |
+      实现基于连接时序分类（CTC）的深度前馈神经网络，结合动态规划和维特比搜索优化语音流对齐；采用强制对齐、束搜索解码和动态训练策略，优化大规模语音数据集的训练效率。技术栈：Python、PyTorch、Kaldi、NumPy、JSON
+
+  - title: 基于CycleGAN的多模态MRI合成
+    link: "https://github.com/hongwei-cai/Cross-Modality-MRI-Synthesis-with-CycleGANs"
+    tagline: |
+      复现2D CycleGAN模型，实现T1与T2 MRI模态间的转换；采用PatchGAN判别器和残差生成器提升图像转换质量，结合Adam优化器和指数衰减调度策略稳定GAN训练。技术栈：Google Colab、PyTorch、NumPy、Pandas、Matplotlib、MONAI、Slicer、Horos
+
+  - title: Netflix 数据整理、探索分析与元数据增强
+    link: "https://github.com/hongwei-cai/Netflix-Data-Wrangling-Exploration-Metadata-Enrichment"
+    tagline: |
+      通过 Pandas/NumPy 实现缺失值处理、重复值剔除与字段标准化；利用 Matplotlib/Seaborn/Plotly 可视化内容类型分布、国家/地区发布趋势及年龄评级关联，提炼关键业务洞察；结合 OMDb API 集成 IMDB/Rotten Tomatoes 等外部评分，通过特征工程（如类型标签、地区映射）丰富数据维度。高预测性能。技术栈：Python（Pandas/NumPy/Matplotlib/Seaborn/Plotly）、数据清洗与预处理、EDA 可视化、API 集成（OMDb）、特征工程、Jupyter Notebook
+
+  - title: 基于EDSR的图像超分辨率增强
+    link: "#"
+    tagline: |
+      复现增强深度超分辨率（EDSR）模型，采用模块化残差块结构提升单尺度图像分辨率，对比传统方法（如SRCNN、SRResNet）显著改善细节还原能力。技术栈：PyTorch、EDSR架构、残差学习
+
+# oss:
+#   title: OSS Contributions
+#   intro: >
+#     You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+#   contributions:
+#   - title: Tempo
+#     link: "#"
+#     tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+
+publications:
+  title: 出版物
+  intro: |
+    以下是我在学术研究期间发表的作品，涵盖了计算机科学、音乐创作等领域的研究成果。
+  papers:
+  - title: "Rapid Diagnosis of Aortic Valve Insufficiency in Aortic Root Enlargement"
+    link: "#"
+    authors: Cindy Chiu, Vincent Cai
+
+  - title: "Path to the Third Pole: for sinfonietta"
+    link: "https://doi.org/10.25820/etd.006913"
+    authors: Hongwei Cai
+    conference: University of Iowa, Autumn 2023
+
+recommendations:
+  title: 推荐人
+  list:
+  - person: Dean Rottinghaus
+    email: dean.rottinghaus@caseys.com
+    # phone: 
+    role: Casey's 软件工程经理
+    recommendation:
+      “宏威在Casey's Store Support Center 的实习期间展现了卓越的技术能力和团队协作精神。通过他的努力，我们成功地完成了.NET 8的技术债务项目任务，并提升了平台的稳定性和性能。”
+
+  - person: Sami Damanhoury
+    email: sami.damanhoury@caseys.com
+    # phone: 
+    role: Casey's 软件工程师
+    recommendation:
+      “宏威是一个工作非常认真勤恳和好相处的人。他学习能力出众，并总是保持谦虚谨慎的工作态度。”
+
+skills:
+  title: 技能专长
+  toolset:
+
+  - name: 机器学习与人工智能 (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, GANs, Bert, GPT, LLMs, PEFT, LoRA, RLHF, NLP, Hugging Face, LangChain, RAG, Prompt Engineering, MCP, CV)
+    level: 85%
+
+  - name: 数据分析与可视化 (SQL, Pandas, NumPy, MatPlotLib, Seaborn, Plotly, Jupyter Notebook, Excel)
+    level: 70%
+
+  - name: 编程与开发工具 (Python, C#/.NET, C++, Bash, Java, JavaScript, React, HTML/CSS, Git, Docker, CI/CD, Scrapy, Selenium, BeautifulSoup)
+    level: 75%
+
+  - name: 云计算与DevOps (Azure, AWS)
+    level: 65%
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
