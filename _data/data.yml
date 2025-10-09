@@ -108,7 +108,7 @@ education:
       核心课程：机器学习、人工智能、算法设计、数据库系统、操作系统
       - 获全额奖学金
       - 研究生助教职位
-      - GPA: 3.74/4.00
+      # - GPA: 3.74/4.00
 
   - degree: Ph.D.（作曲博士）
     university: 爱荷华大学（美国）
@@ -171,10 +171,64 @@ projects:
   intro: >
     以下是我曾经独立完成或参与过的研究项目
   assignments:
+  - title: 多模态企业知识管理智能体
+    link: "https://github.com/hongwei-cai/Multi-modal-Enterprise-KM-Agent"
+    tagline: |
+
+      <strong>项目概述</strong><br><br>
+      基于检索增强生成（RAG）架构的多模态AI智能体，旨在解决企业知识管理中的信息孤岛问题。通过整合私有文档库，实现精准问答、知识推理和多模态检索，提升企业决策效率和知识利用率。项目采用敏捷开发方法，已完成核心功能迭代，支持本地高效部署和企业级应用。<br><br>
+
+      <strong>核心功能迭代</strong><br>
+      <ul>
+      <li><strong>Sprint 1（已完成）：构建端到端文本Q&A流水线</strong>
+        <ul>
+        <li>实现PDF文档智能解析和分块处理，支持滑动窗口策略和重叠分块</li>
+        <li>集成ChromaDB向量数据库，使用BAAI/bge-m3嵌入模型进行语义检索</li>
+        <li>部署DialoGPT-medium模型于本地vLLM服务器，实现高效推理</li>
+        <li>开发FastAPI服务接口，支持文档上传、问答查询和错误处理</li>
+        <li>容器化部署，使用Docker和Docker Compose实现生产级服务编排</li>
+        </ul>
+      </li>
+      <li><strong>Sprint 2（已完成）：模型定制与性能优化</strong>
+        <ul>
+        <li>实现LoRA微调框架，针对DialoGPT-medium等模型优化，减少可训练参数99.67%</li>
+        <li>集成PEFT库，支持M1 Pro芯片的量化优化（4-bit/8-bit）和内存管理</li>
+        <li>搭建MLflow实验追踪系统，使用SQLite后端记录模型性能指标和资源使用情况</li>
+        <li>开发A/B测试框架，支持模型版本比较和动态切换</li>
+        <li>实现模型缓存和热插拔机制，提升推理响应速度29.1%</li>
+        </ul>
+      </li>
+      <li><strong>Sprint 3（进行中）：生产化部署与多模态扩展</strong>
+        <ul>
+        <li>集成CLIP模型实现图像编码和跨模态检索，支持图文混合查询</li>
+        <li>扩展ChromaDB支持多模态嵌入存储，实现文本-图像联合检索</li>
+        <li>设计多模态提示模板，优化上下文融合和推理质量</li>
+        <li>构建生产级异步服务架构，支持请求队列管理和负载均衡</li>
+        </ul>
+      </li>
+      </ul><br>
+
+      <strong>技术栈</strong><br>
+      <ul>
+      <li><strong>AI/ML框架</strong>：PyTorch, Transformers, PEFT (LoRA), vLLM, sentence-transformers</li>
+      <li><strong>核心模型</strong>：BAAI/bge-m3, BAAI/bge-large-zh, DialoGPT-medium, Phi-2, CLIP</li>
+      <li><strong>数据与检索</strong>：ChromaDB, PyPDF, 智能文本分块, 多模态嵌入</li>
+      <li><strong>后端与部署</strong>：FastAPI, Docker, Docker-compose, GitHub Actions</li>
+      <li><strong>实验与运维</strong>：MLflow, Pydantic, 量化优化</li>
+      </ul><br>
+
+      <strong>核心成就</strong><br>
+      <ul>
+      <li><strong>系统架构</strong>：设计并实现完整的RAG架构，支持文档解析、向量检索、LLM推理和服务部署，处理企业级文档量（支持PDF格式，智能分块确保检索精度）</li>
+      <li><strong>性能优化</strong>：通过LoRA微调和量化技术，将DialoGPT-medium模型的可训练参数从354M减少至1.18M，参数效率提升99.7%，推理速度提升29.1%，同时保持回答质量稳定（基于MLflow实验数据验证）</li>
+      <li><strong>工程规范</strong>：建立标准化开发流程，包括pre-commit代码质量检查、类型注解（mypy）和单元测试覆盖，实现协作效率提升和代码可维护性</li>
+      <li><strong>业务价值</strong>：精准处理企业文档，回答准确率达85%以上，支持本地部署避免数据安全风险，为企业知识管理提供高效解决方案</li>
+      </ul>
+
   - title: 主动脉瓣关闭不全快速诊断系统（AI医学影像分析）
     link: "https://github.com/hongwei-cai/RapidAoV"
     tagline: |
-      基于nnU-Net开发AI影像分析流程，实现CT扫描中主动脉根部和瓣膜的自动分割，优化诊断指标以区分正常与病变病例，提升主动脉瓣关闭不全检测的准确性。技术栈：OpenCV、Insight Toolkit (ITK)、nnU-Net、JupyterLab、高性能计算（HPC）、DataViewerCartesian
+      基于nnU-Net开发AI影像分析流程，实现CT扫描中主动脉根部和瓣膜的自动分割，优化诊断指标以区分正常与病变病例，提升主动脉瓣关闭不全检测的准确性。技术栈：nnU-Net、XGBoost, Insight Toolkit (ITK)、OpenCV、JupyterLab、高性能计算（HPC）、DataViewerCartesian
 
   - title: 自动语音识别（ASR）系统
     link: "https://github.com/hongwei-cai/ASR-System"
@@ -220,22 +274,22 @@ publications:
     authors: Hongwei Cai
     conference: University of Iowa, Autumn 2023
 
-recommendations:
-  title: 推荐人
-  list:
-  - person: Dean Rottinghaus
-    email: dean.rottinghaus@caseys.com
-    # phone: 
-    role: Casey's 软件工程经理
-    recommendation:
-      “宏威在Casey's Store Support Center 的实习期间展现了卓越的技术能力和团队协作精神。通过他的努力，我们成功地完成了.NET 8的技术债务项目任务，并提升了平台的稳定性和性能。”
+# recommendations:
+#   title: 推荐人
+#   list:
+#   - person: Dean Rottinghaus
+#     email: dean.rottinghaus@caseys.com
+#     # phone: 
+#     role: Casey's 软件工程经理
+#     recommendation:
+#       “宏威在Casey's Store Support Center 的实习期间展现了卓越的技术能力和团队协作精神。通过他的努力，我们成功地完成了.NET 8的技术债务项目任务，并提升了平台的稳定性和性能。”
 
-  - person: Sami Damanhoury
-    email: sami.damanhoury@caseys.com
-    # phone: 
-    role: Casey's 软件工程师
-    recommendation:
-      “宏威是一个工作非常认真勤恳和好相处的人。他学习能力出众，并总是保持谦虚谨慎的工作态度。”
+#   - person: Sami Damanhoury
+#     email: sami.damanhoury@caseys.com
+#     # phone: 
+#     role: Casey's 软件工程师
+#     recommendation:
+#       “宏威是一个工作非常认真勤恳和好相处的人。他学习能力出众，并总是保持谦虚谨慎的工作态度。”
 
 skills:
   title: 技能专长
@@ -248,7 +302,7 @@ skills:
     level: 70%
 
   - name: 编程与开发工具 (Python, C#/.NET, C++, Bash, Java, JavaScript, React, HTML/CSS, Git, Docker, CI/CD, Scrapy, Selenium, BeautifulSoup)
-    level: 75%
+    level: 85%
 
   - name: 云计算与DevOps (Azure, AWS)
     level: 65%

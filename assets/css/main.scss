@@ -14,5 +14,6 @@ $resume-order: 1;
 $sidebar-order: 2;
 {% endif %}
 
+@import "normalize"; // CSS normalizer for cross-browser consistency
 @import "skins/{{ site.theme_skin | default: 'blue' }}"; // skin
 @import "default"; // main partials

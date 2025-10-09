@@ -16,10 +16,17 @@
   //     -webkit-filter: greyscale(1);
   //   }
   .main-wrapper .time {
-    padding: 10px 30px 10px 10px;
-    //  float: right;
-    //  color: black !important;
-    -webkit-print-color-adjust: exact;
+    position: static !important;
+    display: block !important;
+    // margin-top: 5px !important;
+    // margin-bottom: 10px !important;
+    padding: 5px 0 !important;
+    // font-weight: 600 !important;
+    color: $text-grey !important;
+    background: rgba(0,0,0,0.0) !important;
+    border-radius: 3px !important;
+    padding-left: 8px !important;
+    -webkit-print-color-adjust: exact !important;
   }
   .sidebar-wrapper {
     position: static;
