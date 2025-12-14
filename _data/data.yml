@@ -9,12 +9,12 @@ sidebar:
 
   # Profile information
   name: 蔡宏威
-  tagline: 机器学习工程师
+  tagline: 提示词工程师
   avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: 13234005487@163.com
-  phone: +86 13234005487
+  email: 18545031257@163.com
+  phone: +86 18545031257
   # timezone: Asia/Shanghai # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   # citizenship: 中国
   website: https://hongweicai.com/ # Include the full website URL, including "http://" or "https://".
@@ -90,13 +90,7 @@ sidebar:
 career-profile:
   title: 职业概况
   summary: |
-    美国爱荷华大学计算机科学硕士，聚焦大模型技术（LLMs/Transformers）研发与产业落地，兼具算法创新与工程化能力。精通PyTorch等深度学习框架，熟悉大模型全流程开发——从预训练微调（LoRA/PEFT）、RLHF优化到知识增强（RAG/Prompt Engineering），以及分布式训练与推理加速
-
-    在美国Casey's Store Support Center担任软件工程师实习生，主导.NET 8系统升级与企业级数据平台性能优化，落地DevOps与CI/CD流程，提升开发效率与系统稳定性
-
-    拥有多项AI项目经验，包括医学影像分析、自动语音识别、多模态数据处理等AI项目，覆盖数据清洗、模型设计、训练调优到部署上线全链路，具备端到端问题解决能力
-
-    擅长将AI技术与业务场景结合，推动技术落地（如医疗/零售领域），强跨团队协作与产品思维，<strong>目标岗位：大模型应用开发/训练/评测</strong>，致力于用AI解决真实业务挑战并创造可持续价值
+    专注于大语言模型在医疗领域的可靠落地与可解释推理，具备扎实的提示词工程、RAG 优化、AI 安全风控与上下文工程实战经验。擅长将临床逻辑结构化为可执行的 AI 推理流程，构建安全、合规、高准确率的数字医生系统。具备全栈工程能力与产品思维，致力于通过可信 AI 解决高价值临床挑战。
 
 education:
   title: 教育经历
@@ -105,10 +99,8 @@ education:
     university: 爱荷华大学（美国）
     time: 2023 - 2025
     details: |
-      核心课程：机器学习、人工智能、算法设计、数据库系统、操作系统
       - 获全额奖学金
       - 研究生助教职位
-      # - GPA: 3.74/4.00
 
   - degree: Ph.D.（作曲博士）
     university: 爱荷华大学（美国）
@@ -127,6 +119,15 @@ education:
 experiences:
   title: 工作经历
   info:
+    - role: 提示词工程师
+      time: 2025.12 - current
+      company: 华西数字医疗科技有限公司, 中国成都
+      details: |
+        - 结构化医学推理设计：将临床诊断逻辑（如 SOAP）抽象为模块化提示语模板，构建“提问—假设—反思—验证”闭环，显著提升数字医生在复杂医疗任务中的推理准确性与可解释性，降低模型幻觉。
+        - 安全与风控体系：设计多层级安全栅栏（拒答模板、校验清单），制定风险防护与降级策略，确保医疗对话的安全性与合规性，有效规避偏见与误导。
+        - 上下文工程融合：深度耦合提示语与上下文工程，管理指令层级、工具结果注入及会话状态；针对检索/记忆系统提出召回覆盖率与相关性优化需求，优化信息注入策略。
+        - 全流程效能优化：主导 AI 辅助的提示语开发流程（Self-Generate/Evaluate/Reflect），建立 PromptOps 自动化评测与回归校验机制，实现数据驱动的指标—问题—修复闭环，提升研发效率与质量可追踪性。
+
     - role: 软件工程师（实习）
       time: 2024.05 - 2024.08
       company: Casey's Store Support Center, 美国
@@ -141,10 +142,9 @@ experiences:
       time: 2023.01 - 2025.05
       company: 爱荷华大学计算机科学系
       details: |
-        - 协助教授人工智能、数据结构、编程语言原理等核心课程
+        - 协助教授人工智能、数据结构、计算机组织原理，函数编程等核心课程
         - 指导学生掌握Java、C、Python、Haskell等编程语言
         - 负责作业批改、答疑辅导和实验课教学
-        - 协助优化课程结构，改进教学效率和质量
 
 # certifications:
 #   title: Certifications
@@ -169,66 +169,71 @@ experiences:
 projects:
   title: 项目
   intro: >
-    以下是我曾经独立完成或参与过的研究项目
+    以下是我曾经独立完成或参与过的项目
   assignments:
-  - title: 多模态企业知识管理智能体
-    link: "https://github.com/hongwei-cai/Multi-modal-Enterprise-KM-Agent"
+  # - title: 多模态企业知识管理智能体
+  #   link: "https://github.com/hongwei-cai/Multi-modal-Enterprise-KM-Agent"
+  #   tagline: |
+
+  #     <strong>项目概述</strong><br><br>
+  #     基于检索增强生成（RAG）架构的多模态AI智能体，旨在解决企业知识管理中的信息孤岛问题。通过整合私有文档库，实现精准问答、知识推理和多模态检索，提升企业决策效率和知识利用率。项目采用敏捷开发方法，已完成核心功能迭代，支持本地高效部署和企业级应用。特别探索LLM Reasoning技术，如思维链、多步推理，优化用户需求的语义理解，构建内容生成Agent，涵盖意图识别、知识检索、结果生成与偏好对齐。<br><br>
+
+  #     <strong>核心功能迭代</strong><br>
+  #     <ul>
+  #     <li><strong>Sprint 1（已完成）：构建端到端文本Q&A流水线</strong>
+  #       <ul>
+  #       <li>实现PDF文档智能解析和分块处理，支持滑动窗口策略和重叠分块</li>
+  #       <li>集成ChromaDB向量数据库，使用BAAI/bge-m3嵌入模型进行语义检索</li>
+  #       <li>部署DialoGPT-medium模型于本地vLLM服务器，实现高效推理</li>
+  #       <li>开发FastAPI服务接口，支持文档上传、问答查询和错误处理</li>
+  #       <li>容器化部署，使用Docker和Docker Compose实现生产级服务编排</li>
+  #       </ul>
+  #     </li>
+  #     <li><strong>Sprint 2（已完成）：模型定制与性能优化</strong>
+  #       <ul>
+  #       <li>实现LoRA微调框架，针对DialoGPT-medium等模型优化，减少可训练参数98.8%</li>
+  #       <li>集成PEFT库，支持M1 Pro芯片的量化优化（4-bit/8-bit）和内存管理</li>
+  #       <li>搭建MLflow实验追踪系统，使用SQLite后端记录模型性能指标和资源使用情况</li>
+  #       <li>开发A/B测试框架，支持模型版本比较和动态切换</li>
+  #       <li>实现模型缓存和热插拔机制，提升推理响应速度29.1%</li>
+  #       </ul>
+  #     </li>
+  #     <li><strong>Sprint 3（进行中）：生产化部署与多模态扩展</strong>
+  #       <ul>
+  #       <li>集成CLIP模型实现图像编码和跨模态检索，支持图文混合查询</li>
+  #       <li>扩展ChromaDB支持多模态嵌入存储，实现文本-图像联合检索</li>
+  #       <li>设计多模态提示模板，优化上下文融合和推理质量</li>
+  #       <li>构建生产级异步服务架构，支持请求队列管理和负载均衡</li>
+  #       </ul>
+  #     </li>
+  #     </ul><br>
+
+  #     <strong>技术栈</strong><br>
+  #     <ul>
+  #     <li><strong>AI/ML框架</strong>：PyTorch, Transformers, PEFT (LoRA), vLLM, sentence-transformers</li>
+  #     <li><strong>核心模型</strong>：BAAI/bge-m3, BAAI/bge-large-zh, DialoGPT-medium, Phi-2, CLIP</li>
+  #     <li><strong>数据与检索</strong>：ChromaDB, PyPDF, 智能文本分块, 多模态嵌入</li>
+  #     <li><strong>后端与部署</strong>：FastAPI, Docker, Docker-compose, GitHub Actions</li>
+  #     <li><strong>实验与运维</strong>：MLflow, Pydantic, 量化优化</li>
+  #     </ul><br>
+
+  #     <strong>核心成就</strong><br>
+  #     <ul>
+  #     <li><strong>系统架构</strong>：设计并实现完整的RAG架构，支持文档解析、向量检索、LLM推理和服务部署，处理企业级文档量（支持PDF格式，智能分块确保检索精度）</li>
+  #     <li><strong>性能优化</strong>：通过LoRA微调和量化技术，将DialoGPT-medium模型的可训练参数从354M减少至4.32M，参数效率提升98.8%，推理速度提升7.9%，显存节省10.7%，同时保持回答质量稳定（基于MLflow实验数据验证）</li>
+  #     <li><strong>工程规范</strong>：建立标准化开发流程，包括pre-commit代码质量检查、类型注解（mypy）和单元测试覆盖，实现协作效率提升和代码可维护性</li>
+  #     <li><strong>业务价值</strong>：精准处理企业文档，回答准确率达85%以上，支持本地部署避免数据安全风险，为企业知识管理提供高效解决方案</li>
+  #     </ul>
+
+  - title: 数字医生经验卡系统
+    link: "https://github.com/hongwei-cai/RapidAoV"
     tagline: |
-
-      <strong>项目概述</strong><br><br>
-      基于检索增强生成（RAG）架构的多模态AI智能体，旨在解决企业知识管理中的信息孤岛问题。通过整合私有文档库，实现精准问答、知识推理和多模态检索，提升企业决策效率和知识利用率。项目采用敏捷开发方法，已完成核心功能迭代，支持本地高效部署和企业级应用。<br><br>
-
-      <strong>核心功能迭代</strong><br>
-      <ul>
-      <li><strong>Sprint 1（已完成）：构建端到端文本Q&A流水线</strong>
-        <ul>
-        <li>实现PDF文档智能解析和分块处理，支持滑动窗口策略和重叠分块</li>
-        <li>集成ChromaDB向量数据库，使用BAAI/bge-m3嵌入模型进行语义检索</li>
-        <li>部署DialoGPT-medium模型于本地vLLM服务器，实现高效推理</li>
-        <li>开发FastAPI服务接口，支持文档上传、问答查询和错误处理</li>
-        <li>容器化部署，使用Docker和Docker Compose实现生产级服务编排</li>
-        </ul>
-      </li>
-      <li><strong>Sprint 2（已完成）：模型定制与性能优化</strong>
-        <ul>
-        <li>实现LoRA微调框架，针对DialoGPT-medium等模型优化，减少可训练参数99.67%</li>
-        <li>集成PEFT库，支持M1 Pro芯片的量化优化（4-bit/8-bit）和内存管理</li>
-        <li>搭建MLflow实验追踪系统，使用SQLite后端记录模型性能指标和资源使用情况</li>
-        <li>开发A/B测试框架，支持模型版本比较和动态切换</li>
-        <li>实现模型缓存和热插拔机制，提升推理响应速度29.1%</li>
-        </ul>
-      </li>
-      <li><strong>Sprint 3（进行中）：生产化部署与多模态扩展</strong>
-        <ul>
-        <li>集成CLIP模型实现图像编码和跨模态检索，支持图文混合查询</li>
-        <li>扩展ChromaDB支持多模态嵌入存储，实现文本-图像联合检索</li>
-        <li>设计多模态提示模板，优化上下文融合和推理质量</li>
-        <li>构建生产级异步服务架构，支持请求队列管理和负载均衡</li>
-        </ul>
-      </li>
-      </ul><br>
-
-      <strong>技术栈</strong><br>
-      <ul>
-      <li><strong>AI/ML框架</strong>：PyTorch, Transformers, PEFT (LoRA), vLLM, sentence-transformers</li>
-      <li><strong>核心模型</strong>：BAAI/bge-m3, BAAI/bge-large-zh, DialoGPT-medium, Phi-2, CLIP</li>
-      <li><strong>数据与检索</strong>：ChromaDB, PyPDF, 智能文本分块, 多模态嵌入</li>
-      <li><strong>后端与部署</strong>：FastAPI, Docker, Docker-compose, GitHub Actions</li>
-      <li><strong>实验与运维</strong>：MLflow, Pydantic, 量化优化</li>
-      </ul><br>
-
-      <strong>核心成就</strong><br>
-      <ul>
-      <li><strong>系统架构</strong>：设计并实现完整的RAG架构，支持文档解析、向量检索、LLM推理和服务部署，处理企业级文档量（支持PDF格式，智能分块确保检索精度）</li>
-      <li><strong>性能优化</strong>：通过LoRA微调和量化技术，将DialoGPT-medium模型的可训练参数从354M减少至1.18M，参数效率提升99.7%，推理速度提升29.1%，同时保持回答质量稳定（基于MLflow实验数据验证）</li>
-      <li><strong>工程规范</strong>：建立标准化开发流程，包括pre-commit代码质量检查、类型注解（mypy）和单元测试覆盖，实现协作效率提升和代码可维护性</li>
-      <li><strong>业务价值</strong>：精准处理企业文档，回答准确率达85%以上，支持本地部署避免数据安全风险，为企业知识管理提供高效解决方案</li>
-      </ul>
+      基于临床逻辑设计算法引导式提示工程，构建可泛化的医生经验卡系统，实现从病历中结构化抽取诊断推理、治疗偏好与隐性启发式规则，并融合医学知识图谱与信念状态机，提升LLM在医疗场景中的可解释性、安全性与泛化能力。技术栈：LangChain、Pydantic、Streamlit、Milvus Lite、Algorithmic Prompting、Clinical Reasoning State Machine、Domain Knowledge Injection
 
   - title: 主动脉瓣关闭不全快速诊断系统（AI医学影像分析）
     link: "https://github.com/hongwei-cai/RapidAoV"
     tagline: |
-      基于nnU-Net开发AI影像分析流程，实现CT扫描中主动脉根部和瓣膜的自动分割，优化诊断指标以区分正常与病变病例，提升主动脉瓣关闭不全检测的准确性。技术栈：nnU-Net、XGBoost, Insight Toolkit (ITK)、OpenCV、JupyterLab、高性能计算（HPC）、DataViewerCartesian
+      基于nnU-Net开发AI影像分析流程，实现CT扫描中主动脉根部和瓣膜的自动分割，优化诊断指标以区分正常与病变病例，提升主动脉瓣关闭不全检测的准确性。通过微调模型和数据分析，优化LLM在健康领域的应用，包括问题理解和计划生成。技术栈：nnU-Net、XGBoost, Insight Toolkit (ITK)、OpenCV、JupyterLab、高性能计算（HPC）、DataViewerCartesian
 
   - title: 自动语音识别（ASR）系统
     link: "https://github.com/hongwei-cai/ASR-System"
@@ -245,10 +250,6 @@ projects:
     tagline: |
       通过 Pandas/NumPy 实现缺失值处理、重复值剔除与字段标准化；利用 Matplotlib/Seaborn/Plotly 可视化内容类型分布、国家/地区发布趋势及年龄评级关联，提炼关键业务洞察；结合 OMDb API 集成 IMDB/Rotten Tomatoes 等外部评分，通过特征工程（如类型标签、地区映射）丰富数据维度。高预测性能。技术栈：Python（Pandas/NumPy/Matplotlib/Seaborn/Plotly）、数据清洗与预处理、EDA 可视化、API 集成（OMDb）、特征工程、Jupyter Notebook
 
-  - title: 基于EDSR的图像超分辨率增强
-    link: "#"
-    tagline: |
-      复现增强深度超分辨率（EDSR）模型，采用模块化残差块结构提升单尺度图像分辨率，对比传统方法（如SRCNN、SRResNet）显著改善细节还原能力。技术栈：PyTorch、EDSR架构、残差学习
 
 # oss:
 #   title: OSS Contributions
@@ -295,16 +296,16 @@ skills:
   title: 技能专长
   toolset:
 
-  - name: 机器学习与人工智能 (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, GANs, Bert, GPT, LLMs, PEFT, LoRA, RLHF, NLP, Hugging Face, LangChain, RAG, Prompt Engineering, MCP, CV)
+  - name: 机器学习与人工智能 (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, GANs, LLMs, PEFT, LoRA, RLHF, NLP, Hugging Face, LangChain, RAG, Prompt Engineering, MCP, CV)
     level: 85%
 
   - name: 数据分析与可视化 (SQL, Pandas, NumPy, MatPlotLib, Seaborn, Plotly, Jupyter Notebook, Excel)
     level: 70%
 
-  - name: 编程与开发工具 (Python, C#/.NET, C++, Bash, Java, JavaScript, React, HTML/CSS, Git, Docker, CI/CD, Scrapy, Selenium, BeautifulSoup)
+  - name: 编程与开发工具 (Python, C#/.NET, C++, Bash, Java, JavaScript, React, HTML/CSS, Git, Docker, CI/CD)
     level: 85%
 
-  - name: 云计算与DevOps (Azure, AWS)
+  - name: 云计算与DevOps (Aliyun, Azure, AWS)
     level: 65%
 
 footer: >
