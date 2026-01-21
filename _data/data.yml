@@ -13,7 +13,7 @@ sidebar:
   avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: 18545031257@163.com
+  email: caihongwei@huaxishuyi.com
   phone: +86 18545031257
   # timezone: Asia/Shanghai # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   # citizenship: 中国
@@ -66,7 +66,7 @@ sidebar:
     title: 核心优势
     info:
       - item: 机器学习与AI算法实现
-      - item: 大模型相关能力
+      - item: 大模型相关技能
       - item: 跨学科问题解决能力
       - item: 业务协作与落地
 
@@ -82,9 +82,13 @@ sidebar:
   interests:
     title: 兴趣爱好
     info:
-    - item: 健身
+    - item: 力量举
+    - item: 射箭
+    - item: IPSC/IDPA
+    - item: 滑雪
+    - item: 攀岩
     - item: 阅读
-    - item: 钢琴演奏
+    - item: 钢琴
     - item: 音乐创作
 
 career-profile:
@@ -107,6 +111,7 @@ education:
     time: 2016 - 2023
     details: |
       - 获文理学院优秀博士论文奖
+      - 研究生助理研究员职位
 
   - degree: 艺术硕士
     university: 俄克拉荷马城市大学（美国）
@@ -123,11 +128,11 @@ experiences:
       time: 2025.12 - current
       company: 华西数字医疗科技有限公司, 中国成都
       details: |
-        - 结构化医学推理设计：将临床诊断逻辑（如 SOAP）抽象为模块化提示语模板，构建“提问—假设—反思—验证”闭环，显著提升数字医生在复杂医疗任务中的推理准确性与可解释性，降低模型幻觉。
-        - 安全与风控体系：设计多层级安全栅栏（拒答模板、校验清单），制定风险防护与降级策略，确保医疗对话的安全性与合规性，有效规避偏见与误导。
-        - 上下文工程融合：深度耦合提示语与上下文工程，管理指令层级、工具结果注入及会话状态；针对检索/记忆系统提出召回覆盖率与相关性优化需求，优化信息注入策略。
-        - 全流程效能优化：主导 AI 辅助的提示语开发流程（Self-Generate/Evaluate/Reflect），建立 PromptOps 自动化评测与回归校验机制，实现数据驱动的指标—问题—修复闭环，提升研发效率与质量可追踪性。
-
+        - **数字医生赋能 (Digital Doctor Enablement)**：
+          主导开发“数字医生智能体”，将电子病历 (EHR) 中的真实医生经验转化为可计算的数字资产。
+          - **经验抽取系统**：设计 "Visit-Trajectory-Knowledge" 三层经验卡体系以结构化临床逻辑，作为智能体决策的认知核心。
+          - **安全与证据控制**：实施“可控 RAG” (Controlled RAG) 与严格的证据引用机制，确保医疗建议可追溯、基于事实且无幻觉。
+          - **PromptOps 基础设施**：建立持续评估与版本控制流水线 (PromptOps)，在复杂诊断场景中迭代提升智能体的推理准确性。
     - role: 软件工程师（实习）
       time: 2024.05 - 2024.08
       company: Casey's Store Support Center, 美国
@@ -171,84 +176,71 @@ projects:
   intro: >
     以下是我曾经独立完成或参与过的项目
   assignments:
-  # - title: 多模态企业知识管理智能体
-  #   link: "https://github.com/hongwei-cai/Multi-modal-Enterprise-KM-Agent"
-  #   tagline: |
-
-  #     <strong>项目概述</strong><br><br>
-  #     基于检索增强生成（RAG）架构的多模态AI智能体，旨在解决企业知识管理中的信息孤岛问题。通过整合私有文档库，实现精准问答、知识推理和多模态检索，提升企业决策效率和知识利用率。项目采用敏捷开发方法，已完成核心功能迭代，支持本地高效部署和企业级应用。特别探索LLM Reasoning技术，如思维链、多步推理，优化用户需求的语义理解，构建内容生成Agent，涵盖意图识别、知识检索、结果生成与偏好对齐。<br><br>
-
-  #     <strong>核心功能迭代</strong><br>
-  #     <ul>
-  #     <li><strong>Sprint 1（已完成）：构建端到端文本Q&A流水线</strong>
-  #       <ul>
-  #       <li>实现PDF文档智能解析和分块处理，支持滑动窗口策略和重叠分块</li>
-  #       <li>集成ChromaDB向量数据库，使用BAAI/bge-m3嵌入模型进行语义检索</li>
-  #       <li>部署DialoGPT-medium模型于本地vLLM服务器，实现高效推理</li>
-  #       <li>开发FastAPI服务接口，支持文档上传、问答查询和错误处理</li>
-  #       <li>容器化部署，使用Docker和Docker Compose实现生产级服务编排</li>
-  #       </ul>
-  #     </li>
-  #     <li><strong>Sprint 2（已完成）：模型定制与性能优化</strong>
-  #       <ul>
-  #       <li>实现LoRA微调框架，针对DialoGPT-medium等模型优化，减少可训练参数98.8%</li>
-  #       <li>集成PEFT库，支持M1 Pro芯片的量化优化（4-bit/8-bit）和内存管理</li>
-  #       <li>搭建MLflow实验追踪系统，使用SQLite后端记录模型性能指标和资源使用情况</li>
-  #       <li>开发A/B测试框架，支持模型版本比较和动态切换</li>
-  #       <li>实现模型缓存和热插拔机制，提升推理响应速度29.1%</li>
-  #       </ul>
-  #     </li>
-  #     <li><strong>Sprint 3（进行中）：生产化部署与多模态扩展</strong>
-  #       <ul>
-  #       <li>集成CLIP模型实现图像编码和跨模态检索，支持图文混合查询</li>
-  #       <li>扩展ChromaDB支持多模态嵌入存储，实现文本-图像联合检索</li>
-  #       <li>设计多模态提示模板，优化上下文融合和推理质量</li>
-  #       <li>构建生产级异步服务架构，支持请求队列管理和负载均衡</li>
-  #       </ul>
-  #     </li>
-  #     </ul><br>
-
-  #     <strong>技术栈</strong><br>
-  #     <ul>
-  #     <li><strong>AI/ML框架</strong>：PyTorch, Transformers, PEFT (LoRA), vLLM, sentence-transformers</li>
-  #     <li><strong>核心模型</strong>：BAAI/bge-m3, BAAI/bge-large-zh, DialoGPT-medium, Phi-2, CLIP</li>
-  #     <li><strong>数据与检索</strong>：ChromaDB, PyPDF, 智能文本分块, 多模态嵌入</li>
-  #     <li><strong>后端与部署</strong>：FastAPI, Docker, Docker-compose, GitHub Actions</li>
-  #     <li><strong>实验与运维</strong>：MLflow, Pydantic, 量化优化</li>
-  #     </ul><br>
-
-  #     <strong>核心成就</strong><br>
-  #     <ul>
-  #     <li><strong>系统架构</strong>：设计并实现完整的RAG架构，支持文档解析、向量检索、LLM推理和服务部署，处理企业级文档量（支持PDF格式，智能分块确保检索精度）</li>
-  #     <li><strong>性能优化</strong>：通过LoRA微调和量化技术，将DialoGPT-medium模型的可训练参数从354M减少至4.32M，参数效率提升98.8%，推理速度提升7.9%，显存节省10.7%，同时保持回答质量稳定（基于MLflow实验数据验证）</li>
-  #     <li><strong>工程规范</strong>：建立标准化开发流程，包括pre-commit代码质量检查、类型注解（mypy）和单元测试覆盖，实现协作效率提升和代码可维护性</li>
-  #     <li><strong>业务价值</strong>：精准处理企业文档，回答准确率达85%以上，支持本地部署避免数据安全风险，为企业知识管理提供高效解决方案</li>
-  #     </ul>
+  - title: 医疗AI专家系统
+    link: "https://github.com/hongwei-cai/medical-ai-data-pipeline"
+    tagline: |
+      开发了一套基于RAG架构的医疗AI系统，整合多模态数据（Excel/影像）实现智能检索与分析。核心MVP在3小时内完成，展现了高效的全栈开发能力。
+      <ul>
+      <li><strong>快速交付</strong>：3小时内完成ETL、后端及Streamlit UI的端到端开发。</li>
+      <li><strong>多模态融合</strong>：统一清洗结构化病历与非结构化医学影像数据。</li>
+      <li><strong>智能功能</strong>：集成ChromaDB与Qwen模型，提供复杂语义查询与交互式图表。</li>
+      </ul>
+      <strong>技术栈</strong>：Python, LangChain, Streamlit, ChromaDB, Qwen-Max/VL
 
   - title: 数字医生经验卡系统
-    link: "https://github.com/hongwei-cai/RapidAoV"
+    link: "https://github.com/hongwei-cai/md-expert-card-system"
     tagline: |
-      基于临床逻辑设计算法引导式提示工程，构建可泛化的医生经验卡系统，实现从病历中结构化抽取诊断推理、治疗偏好与隐性启发式规则，并融合医学知识图谱与信念状态机，提升LLM在医疗场景中的可解释性、安全性与泛化能力。技术栈：LangChain、Pydantic、Streamlit、Milvus Lite、Algorithmic Prompting、Clinical Reasoning State Machine、Domain Knowledge Injection
+      构建基于 "Visit-Trajectory-Knowledge" 三层架构 的可泛化医生经验卡系统，旨在解决医疗大模型在私有知识应用中的“黑盒”与“幻觉”痛点。
+      <ul>
+      <li><strong>三层架构</strong>：从EHR中精准抽取结构化临床切片(VisitCard)，聚合生成时序病程轨迹(TrajectoryCard)，沉淀可复用医学知识(KnowledgeCard)。</li>
+      <li><strong>可控RAG</strong>：采用代码级Embedding Policy确保索引纯净，融合语义向量与临床特征重排(Clinical Scoring)优化检索。</li>
+      <li><strong>闭环可解释性</strong>：生成端强制执行严格的证据引用机制，实现从诊断建议到原始病历的逐级溯源。</li>
+      </ul>
+      <strong>技术栈</strong>：LangChain (LCEL), Pydantic (Schema Validation), Milvus (Vector Store), Streamlit (Interactive UI), Python (Async Pipeline), Pytest (Regression Testing)
 
   - title: 主动脉瓣关闭不全快速诊断系统（AI医学影像分析）
     link: "https://github.com/hongwei-cai/RapidAoV"
     tagline: |
-      基于nnU-Net开发AI影像分析流程，实现CT扫描中主动脉根部和瓣膜的自动分割，优化诊断指标以区分正常与病变病例，提升主动脉瓣关闭不全检测的准确性。通过微调模型和数据分析，优化LLM在健康领域的应用，包括问题理解和计划生成。技术栈：nnU-Net、XGBoost, Insight Toolkit (ITK)、OpenCV、JupyterLab、高性能计算（HPC）、DataViewerCartesian
+      基于nnU-Net开发AI影像分析流程，实现CT扫描中主动脉根部和瓣膜的自动分割，优化诊断指标以区分正常与病变病例。
+      <ul>
+      <li><strong>自动分割</strong>：利用nnU-Net实现主动脉根部和瓣膜的高精度自动分割，提升主动脉瓣关闭不全检测准确性。</li>
+      <li><strong>诊断优化</strong>：结合XGBoost与临床指标分析，有效区分正常与病变病例。</li>
+      <li><strong>LLM应用</strong>：通过微调模型优化LLM在健康领域的应用，增强问题理解和计划生成能力。</li>
+      </ul>
+      <strong>技术栈</strong>：nnU-Net, XGBoost, ITK, OpenCV, JupyterLab, HPC, DataViewerCartesian
 
   - title: 自动语音识别（ASR）系统
     link: "https://github.com/hongwei-cai/ASR-System"
     tagline: |
-      实现基于连接时序分类（CTC）的深度前馈神经网络，结合动态规划和维特比搜索优化语音流对齐；采用强制对齐、束搜索解码和动态训练策略，优化大规模语音数据集的训练效率。技术栈：Python、PyTorch、Kaldi、NumPy、JSON
+      实现基于连接时序分类（CTC）的深度前馈神经网络，结合动态规划和维特比搜索优化语音流对齐。
+      <ul>
+      <li><strong>核心算法</strong>：构建深度前馈神经网络，利用CTC损失函数处理不定长语音序列。</li>
+      <li><strong>解码优化</strong>：采用束搜索(Beam Search)解码与强制对齐策略，显著提升识别准确率。</li>
+      <li><strong>训练效率</strong>：应用动态训练策略优化大规模语音数据集的训练过程。</li>
+      </ul>
+      <strong>技术栈</strong>：Python, PyTorch, Kaldi, NumPy, JSON
 
   - title: 基于CycleGAN的多模态MRI合成
     link: "https://github.com/hongwei-cai/Cross-Modality-MRI-Synthesis-with-CycleGANs"
     tagline: |
-      复现2D CycleGAN模型，实现T1与T2 MRI模态间的转换；采用PatchGAN判别器和残差生成器提升图像转换质量，结合Adam优化器和指数衰减调度策略稳定GAN训练。技术栈：Google Colab、PyTorch、NumPy、Pandas、Matplotlib、MONAI、Slicer、Horos
+      复现2D CycleGAN模型，实现T1与T2 MRI模态间的高质量转换，解决跨模态数据稀缺问题。
+      <ul>
+      <li><strong>模型架构</strong>：采用PatchGAN判别器和残差生成器，显著提升图像纹理细节与转换质量。</li>
+      <li><strong>训练优化</strong>：结合Adam优化器和指数衰减调度策略，有效解决GAN训练不稳定的问题。</li>
+      <li><strong>应用价值</strong>：实现不同MRI模态间的无监督转换，辅助医学影像分析与数据增强。</li>
+      </ul>
+      <strong>技术栈</strong>：PyTorch, MONAI, NumPy, Pandas, Matplotlib, Slicer, Horos
 
   - title: Netflix 数据整理、探索分析与元数据增强
     link: "https://github.com/hongwei-cai/Netflix-Data-Wrangling-Exploration-Metadata-Enrichment"
     tagline: |
-      通过 Pandas/NumPy 实现缺失值处理、重复值剔除与字段标准化；利用 Matplotlib/Seaborn/Plotly 可视化内容类型分布、国家/地区发布趋势及年龄评级关联，提炼关键业务洞察；结合 OMDb API 集成 IMDB/Rotten Tomatoes 等外部评分，通过特征工程（如类型标签、地区映射）丰富数据维度。高预测性能。技术栈：Python（Pandas/NumPy/Matplotlib/Seaborn/Plotly）、数据清洗与预处理、EDA 可视化、API 集成（OMDb）、特征工程、Jupyter Notebook
+      对Netflix数据集进行全流程数据分析与挖掘，结合外部API丰富数据维度，提炼关键业务洞察。
+      <ul>
+      <li><strong>数据清洗</strong>：利用Pandas/NumPy处理缺失值与重复值，建立标准化的数据预处理流程。</li>
+      <li><strong>可视化洞察</strong>：使用Matplotlib/Seaborn/Plotly揭示内容分布、发布趋势及年龄评级关联。</li>
+      <li><strong>特征增强</strong>：集成OMDb API引入外部评分，通过特征工程丰富数据维度，支持高预测性能模型。</li>
+      </ul>
+      <strong>技术栈</strong>：Python (Pandas/NumPy/Matplotlib/Seaborn/Plotly), OMDb API, Jupyter Notebook
 
 
 # oss:
@@ -296,7 +288,7 @@ skills:
   title: 技能专长
   toolset:
 
-  - name: 机器学习与人工智能 (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, GANs, LLMs, PEFT, LoRA, RLHF, NLP, Hugging Face, LangChain, RAG, Prompt Engineering, MCP, CV)
+  - name: 深度学习与人工智能 (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, GANs, LLMs, PEFT, LoRA, RLHF, LangChain, RAG, Prompt Engineering, MCP, NLP, CV)
     level: 85%
 
   - name: 数据分析与可视化 (SQL, Pandas, NumPy, MatPlotLib, Seaborn, Plotly, Jupyter Notebook, Excel)
